@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://in-net.ph/img/pup-campus.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.landingpage{
+    width:100%;
+    min-height: 100vh;
+}
+.row{
+    width: 100%;
+    padding: 0px 80px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    position: relative;
+    z-index: 1;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    padding:10px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    background-color: maroon;
+}
+.navbar h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.hometitle{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.heading{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+#head{
+    font-size: 1.8em;
+}
+#subheading{
+    font-size: 18px;
+    margin-top: 10px;
+}
+#content1{
+    width: 90%;
+    margin: auto;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 60px;
+}
+form .box{
+    width: 98.5%;
+    height: 2.8em;
+    position: relative;
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+#courseoption select{
+    width: 98.5%;
+    height: 2.7em;
+    position: relative;
+    bottom: 10px;
+    border-radius: 5px;
+    border: 0;
+}
