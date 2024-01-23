@@ -115,8 +115,98 @@ nav img{
 .pup-links ul li:hover::after{
     width: 100%;
 }
-
-
+/*----- id form -----*/
+/*.id-form{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(image/pupback.jpg);
+    background-position: center;
+    background-size: cover;
+}*/
+.idcont{
+    width: 380px;
+    height: 650px;
+    margin: 8% auto;
+    background: maroon;
+    border-radius: 5px;
+    position: relative;
+}
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+.idcont form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+::placeholder{
+    color: black;
+}
+.id-btn{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: gold;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+#f2{
+    left: 450px;
+}
+#f3{
+    left: 450px;
+}
+.step-row{
+    width: 380px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, gold, grey);
+}
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid white;
+}
 
 /*-----about us page-----*/
 .subheader{
@@ -187,6 +277,7 @@ nav img{
     margin-bottom: 17px;
     outline: none;
     border: 1px solid maroon;
+    color: black;
 }
 .mess-btn{
     border: 1px solid maroon;
