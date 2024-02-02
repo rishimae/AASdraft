@@ -123,7 +123,7 @@ nav img{
 }*/
 .idcont{
     width: 380px;
-    height: 650px;
+    height: 680px;
     margin: 8% auto;
     background: maroon;
     border-radius: 5px;
@@ -153,6 +153,18 @@ form input{
 }
 ::placeholder{
     color: black;
+}
+select#gender {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+select#gender option {
+    font-size: 12px;
 }
 .id-btn{
     width: 100%;
