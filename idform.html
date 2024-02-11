@@ -2,8 +2,11 @@
 <html>
     <head>
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title>Application for Accreditation of Subject</title>
+        <title>Application for New or Replacement of Identification Card Form</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     </head>
         <body>
             <section class="subheader">
@@ -17,105 +20,131 @@
                         </ul>
                     </div>
                 </nav>
-                <h1>Application for New/Replacement of Identification Card</h1>
+                <h2>Application for New/Replacement of Identification Card</h2>
             </section>
             <!----- ID FORM ----->
             <section class="id-form">
-                <div class="idcont">
-                    <form id="f1">
-                        <h3>Personal Information</h3>
-                        <input type="text" id="firstName" placeholder="Enter your First Name">
-                        <input type="text" id="middleName" placeholder="Enter your Middle Name">
-                        <input type="text" id="lastName" placeholder="Enter your Last Name">
-                        <label for="gender">Gender</label>
-                        <select id="gender">
-                            <option value="" disabled selected>Select Gender</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                        <label for="dob">Birthdate</label>
-                        <input type="date" id="dob" name="dob">
-                        <input type="text" id="homeAddress" placeholder="Home Address">
-                        <input type="text" id="phoneNumber" placeholder="Phone/Mobile Number" title="Please enter a valid 11-digit contact number.">
-                        <input type="email" id="email" placeholder="Email Address" title="Please enter a valid email address">
+                <div class="container">
+                    <form method="post" action="https://script.google.com/macros/s/AKfycbxNAw65JwwbsnFSGYlqIct8nOf86kQ8jiyXMcZQNqBPP7JX-nyqPLjgDYknZmBHwOB4/exec">
+                        <div class="form info">
+                            <span class="title">Personal Information</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name">
+                                    <span></span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Middle Name</label>
+                                    <input type="text" id="middleName" name="middleName" placeholder="Enter your Middle Name">
+                                    <span></span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name">
+                                    <span></span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender" name="gender">
+                                        <option value="" disabled selected>Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <label for="dob">Birthdate</label>
+                                    <input type="date" id="dob" name="dob">
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Home Address</label>
+                                    <input type="text" id="homeAddress" name="homeAddress" placeholder="Home Address">
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Phone Number</label>
+                                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone/Mobile Number">
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Email Address">
+                                </div>
+                                <div class="input-field">
+                                    <label for="idapp">Reasons/Categories for ID Application</label>
+                                    <select id="idapp" name="idapp">
+                                        <option value="" disabled selected>Select Category</option>
+                                        <option value="Transferee">Transferee</option>
+                                        <option value="Late Filling">Late Filling</option>
+                                        <option value="Old ID">Old ID</option>
+                                        <option value="Shiftee">Shiftee</option>
+                                        <option value="Damaged">Damaged</option>
+                                        <option value="Correction of Entry">Correction of Entry</option>
+                                        <option value="LHS">Laboratory High School</option>
+                                        <option value="SHS">Senior High School</option>
+                                        <option value="Undergrad">Undergraduate</option>
+                                        <option value="CoL">College of Law</option>
+                                        <option value="Graduate School">Graduate School</option>
+                                        <option value="Open University">Open University</option>
+                                        <option value="IoT">Institute of Technology</option>
+                                    </select>
+                                </div>
+                                </div>
+                            <div>
+                        <div>
+  
+                        <div class="school info">
+                            <span class="title">School Information</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">Student Number</label>
+                                    <input type="text" id="studentNumber" name="studentNumber" placeholder="Enter your Student Number">
+                                    <span>Sample: XXXX-XXXXX-MN-X</span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">College</label>
+                                    <input type="text" id="college" name="college" placeholder="College/Department">
+                                    <span>Sample: College of Engineering</span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Course, Year, and Section</label>
+                                    <input type="text" id="course" name="course" placeholder="Course, Year, and Section">
+                                    <span>Sample: BSIT 3-1N</span>
+                                </div>
+                            </div>
+                        <div>
+                        
+                        <div class="emergency info">
+                            <span class="title">Emergency Contact</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">Full Name</label>
+                                    <input type="text" id="emergencyContactName" name="emergencyContactName" placeholder="Enter the Complete Name">
+                                    <span></span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Contact Number</label>
+                                    <input type="text" id="emergencyContactNumber" name="emergencyContactNumber" placeholder="Phone/Mobile Number">
+                                    
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Full Address</label>
+                                    <input type="text" id="emergencyContactAddress" name="emergencyContactAddress" placeholder="Home Address">
+                                    <span></span>
+                                </div>
+                            </div>
+                        <div>
 
-                        <div class="id-btn">
-                            <button type="button" id="Next1">Next</button>
-                        </div>
+                            
+                            <button type="button" onclick="cancelForm()">Cancel</button>
+                            <button type="submit" onclick="return validateForm()">Submit</button>
+
                     </form>
-                    <form id="f2">
-                        <h3>School Information</h3>
-                        <input type="text" id="studentNumber" placeholder="Enter your Student Number">
-                        <span>Sample: XXXX-XXXXX-MN-X</span>
-                        <input type="text" id="college" placeholder="College/Department">
-                        <input type="text" id="course" placeholder="Course, Year, and Section">
-                        <span>Sample: BSIT 3-1N</span>
-
-                        <div class="id-btn">
-                            <button type="button" id="Back1">Back</button>
-                            <button type="button" id="Next2">Next</button>
-                        </div>
-                    </form>
-                    <form id="f3">
-                        <h3>Emergency Contact</h3>
-                        <input type="text" id="emergencyContactName" placeholder="Enter the Complete Name">
-                        <input type="text" id="emergencyContactNumber" placeholder="Phone/Mobile Number" title="Please enter a valid 11-digit contact number.">
-                        <input type="text" id="emergencyContactAddress" placeholder="Home Address">
-
-                        <div class="id-btn">
-                            <button type="button" id="Back2">Back</button>
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>
-
-                    <div class="step-row">
-                        <div id="progress"></div>
-                        <div class="step-col"><small>Step 1</small></div>
-                        <div class="step-col"><small>Step 2</small></div>
-                        <div class="step-col"><small>Step 3</small></div>
-                    </div>
                 </div>
                 
-                <!-- storing elements in variables-->
-               <script>
-                    
-                    var Form1 = document.getElementById("f1");
-                    var Form2 = document.getElementById("f2");
-                    var Form3 = document.getElementById("f3");
-
-                    var Next1 = document.getElementById("Next1");
-                    var Next2 = document.getElementById("Next2");
-                    var Back1 = document.getElementById("Back1");
-                    var Back2 = document.getElementById("Back2");
-
-                    var progress = document.getElementById("progress");
-                    
-                    Next1.onclick = function(){
-                        Form1.style.left = "-450px";
-                        Form2.style.left = "40px";
-                        progress.style.width = "240px";
-                    }
-                    Back1.onclick = function(){
-                        Form1.style.left = "40px";
-                        Form2.style.left = "450px";
-                        progress.style.width = "120px";
-                    }
-                    Next2.onclick = function(){
-                        Form2.style.left = "-450px";
-                        Form3.style.left = "40px";
-                        progress.style.width = "360px";
-                    }
-                    Back2.onclick = function(){
-                        Form2.style.left = "40px";
-                        Form3.style.left = "450px";
-                        progress.style.width = "240px";
-                    }
-                </script>
-    
-
+            </section>
+            
                 <script>
                     // Validation function for Form 1
-                    function validateForm1() {
+                    function validateForm() {
                         var firstName = document.getElementById("firstName").value.trim();
                         var middleName = document.getElementById("middleName").value.trim();
                         var lastName = document.getElementById("lastName").value.trim();
@@ -124,9 +153,10 @@
                         var homeAddress = document.getElementById("homeAddress").value.trim();
                         var phoneNumber = document.getElementById("phoneNumber").value.trim();
                         var email = document.getElementById("email").value.trim();
+                        var idapp = document.getElementById("idapp").value.trim();
 
                         // Check if any field is empty
-                        if (firstName === "" || middleName === "" || lastName === "" || homeAddress === "" || gender === "" || dob === "" || phoneNumber === "" || email === "") {
+                        if (firstName === "" || middleName === "" || lastName === "" || homeAddress === "" || gender === "" || dob === "" || phoneNumber === "" || email === "" || idapp === "") {
                             alert("Please fill in all fields.");
                             return false;
                         }
@@ -144,11 +174,10 @@
                             alert("Please enter a valid email address.");
                             return false;
                         }
-                        return true;
-                    }
-
-                    // Validation function for Form 2
-                    function validateForm2() {
+                        if (idapp === "" || idapp === null || idapp === "Select Category") {
+                            alert("Please select a category for ID application.");
+                            return false;
+                        }
                         var studentNumber = document.getElementById("studentNumber").value.trim();
                         var college = document.getElementById("college").value.trim();
                         var course = document.getElementById("course").value.trim();
@@ -162,13 +191,6 @@
                             alert("Please enter the correct student number.");
                             return false;
                         }
-                        // Custom validation or patterns can be added here
-
-                        return true;
-                    }
-
-                    // Validation function for Form 3
-                    function validateForm3() {
                         var emergencyContactName = document.getElementById("emergencyContactName").value.trim();
                         var emergencyContactNumber = document.getElementById("emergencyContactNumber").value.trim();
                         var emergencyContactAddress = document.getElementById("emergencyContactAddress").value.trim();
@@ -177,73 +199,40 @@
                             alert("Please fill in all fields.");
                             return false;
                         }
-                        var emergencyContactNumber = /^\d{11}$/;
-                        if (!emergencyContactNumber.test(emergencyContactNumber)) {
-                            alert("Please enter a valid 11-digit phone number.");
+                        var emergencyContactNumberPattern = /^\d{11}$/;
+                        if (!emergencyContactNumberPattern.test(emergencyContactNumber)) {
+                            alert("Please enter a valid 11-digit emergency contact number.");
                             return false;
                         }
 
-                        // Custom validation or patterns can be added here
-
                         return true;
                     }
-
-                    // Form navigation functions
-                    Next1.onclick = function(){
-                        if (validateForm1()) {
-                            Form1.style.left = "-450px";
-                            Form2.style.left = "40px";
-                            progress.style.width = "240px";
+                    function cancelForm() {
+                        var fields = document.getElementsByClassName("input-field");
+                        
+                        // Loop through each input field
+                        for (var i = 0; i < fields.length; i++) {
+                            var input = fields[i].getElementsByTagName("input")[0];
+                            var select = fields[i].getElementsByTagName("select")[0];
+                            
+                            // Clear the value of input fields
+                            if (input) {
+                                input.value = "";
+                            }
+                            
+                            // Reset select fields to their default option
+                            if (select) {
+                                select.selectedIndex = 0;
+                            }
+                            
+                            // Remove error class if present
+                            fields[i].classList.remove("error");
                         }
                     }
-                    Back1.onclick = function(){
-                        Form1.style.left = "40px";
-                        Form2.style.left = "450px";
-                        progress.style.width = "120px";
-                    }
-                    Next2.onclick = function(){
-                        if (validateForm2()) {
-                            Form2.style.left = "-450px";
-                            Form3.style.left = "40px";
-                            progress.style.width = "360px";
-                        }
-                    }
-                    Back2.onclick = function(){
-                        Form2.style.left = "40px";
-                        Form3.style.left = "450px";
-                        progress.style.width = "240px";
-                    }
-
-                    // Form submission validation
-                    document.getElementById("f3").onsubmit = function() {
-                        return validateForm3();
-                    };
+     
                 </script>
 
             </section>
 
-            <!-- FOOTER -->
-            <section class="footer">
-                <h4>Keep in Touch</h4>
-                <p>Polytechnic University of the Philippines</p><br>
-                <div class="pup-links">
-                    <ul>
-                        <p>Online Services</p>
-                        <li><a href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-">PUP Webmail</a></li>
-                        <li><a href="https://www.pup.edu.ph/iapply/">PUP iApply</a></li>
-                        <li><a href="https://sis2.pup.edu.ph/">SIS for Students</a></li>
-                        <p>Downloads</p>
-                        <li><a href="https://www.pup.edu.ph/downloads/students/">For Students</a></li>
-                        <br><br><br>
-                        <li><a href="https://www.pup.edu.ph/terms/">Terms of Use</a></li>
-                        <li><a href="https://www.pup.edu.ph/privacy/">Privacy Statement</a></li>
-                    </ul>
-                </div>
-                <div class="icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
-                </div>
-            </section>
         </body>
 </html>
